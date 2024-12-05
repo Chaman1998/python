@@ -61,6 +61,7 @@ Traceback (most recent call last):
 KeyError: 'comics'
 
 ============================================
+
 >>>myTup = (1, 2, 3)
 
 >>>myTup[0]
@@ -70,4 +71,26 @@ KeyError: 'comics'
 >>> len(myTup)
 
 3
+
 ============================================
+
+>>> from decimal import Decimal
+>>> Decimal('0.1') + Decimal('0.1') + Decimal('0.1')
+
+Decimal('0.3')
+
+>>> Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3') 
+
+Decimal('0.0')
+
+============================================
+
+>>> setone = {1, 2, 3, 4}
+>>> setone & {1, 3}
+
+{1, 3}
+
+>>> setone | {1, 3, 7}
+
+{1, 2, , 3, 4, 7}
+
