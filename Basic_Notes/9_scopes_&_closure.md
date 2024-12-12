@@ -25,7 +25,7 @@ def outer_function():
 outer_function()
 print(x)  # Prints "global"
 ```
-=======================================
+# ===============================
 
 # Closures in Python
 
@@ -55,3 +55,23 @@ print(double(5))  # Output: 10
 triple = multiplier(3)
 print(triple(5))  # Output: 15
 ```
+# ===============================
+
+# Example
+```
+def coder(num):
+    def actual(x):
+        return x ** num
+    return actual
+
+f = coder(2)
+
+print(f(3))
+```
+
+## Output
+```
+9
+```
+** Here f() refer to the 'actual(x)', and the 'f = coder()' value refer to the 'num'.
+
